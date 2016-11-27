@@ -2,7 +2,7 @@ nginx-proxy/certs*
 nginx-proxy/conf.d*
 nginx-proxy/html*
 nginx-proxy/vhost.d*
-nateandxtina.com*
-cloudconstruction.io*
-nathanguenther.com*
+nateandxtina.com/*
+cloudconstruction.io/*
+nathanguenther.com/*
 my-blog*
