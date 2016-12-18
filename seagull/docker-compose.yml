@@ -1,0 +1,19 @@
+version: '2'
+services:
+
+  seagull:
+    restart: always
+    image: tobegit3hub/seagull
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    networks:
+      - nginx-proxy
+    environment:
+      - VIRTUAL_HOST=seagull.nathanguenther.com
+      - VIRTUAL_PORT=10086
+      - COMPOSE_PROJECT_NAME=seagull
+         
+      
+networks:
+    nginx-proxy:
+        external: true
